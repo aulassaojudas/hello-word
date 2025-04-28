@@ -1,0 +1,32 @@
+/* Header.css */
+.header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+    background: var(--color-primary);
+    color: var(--gray-light);
+    padding: var(--gutter);
+    z-index: 1000;
+}
+
+.logo-fixed {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}

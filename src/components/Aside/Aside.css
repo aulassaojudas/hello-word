@@ -1,0 +1,36 @@
+.sidebar {
+    grid-area: aside;
+    background: var(--gray-medium);
+    z-index: 998;
+}
+
+.sidebar-nav {
+    background: var(--gray-medium);
+    color: var(--gray-dark);
+    gap: var(--gutter);
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    gap: 1.5rem;
+}
+
+.sidebar-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+

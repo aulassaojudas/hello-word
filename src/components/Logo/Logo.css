@@ -1,0 +1,34 @@
+/* src/components/Logo/Logo.css */
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+    transform-origin: center;
+}
+.zoom {
+    animation: zoom-animation 2s infinite;
+    transform-origin: center;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
