@@ -1,0 +1,68 @@
+.form-grid {
+    display: grid;
+    grid-template-areas:
+        "foto nome nome nome"
+        "foto nascimento hora idade"
+        "semana mes dataCompleta telefone"
+        "cpf email email email"
+        "senha senha confirmaSenha confirmaSenha"
+        "site site site site"
+        "login login cancelar cancelar";
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-button {
+    padding: 0.625rem 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Tablet e celular (máx 600px) — 2 colunas */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-areas:
+            "foto foto"
+            "nome nome"
+            "nascimento hora"
+            "idade idade"
+            "semana mes"
+            "dataCompleta telefone"
+            "cpf cpf"
+            "email email"
+            "senha senha"
+            "confirmaSenha confirmaSenha"
+            "site site"
+            "login cancelar";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Celular pequeno (máx 400px) — 1 coluna */
+@media (max-width: 400px) {
+    .form-grid {
+        grid-template-areas:
+            "foto"
+            "nome"
+            "nascimento"
+            "hora"
+            "idade"
+            "semana"
+            "mes"
+            "dataCompleta"
+            "telefone"
+            "cpf"
+            "email"
+            "senha"
+            "confirmaSenha"
+            "site"
+            "login"
+            "cancelar";
+        grid-template-columns: 1fr;
+    }
+}

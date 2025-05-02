@@ -1,5 +1,4 @@
 // components/Header.tsx
-
 import { Logo } from "../Logo/Logo";
 import "./Header.css";
 export const Header = ()=> {

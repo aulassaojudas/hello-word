@@ -32,3 +32,8 @@
 .nav-link:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
+.user-display {
+    font-weight: bold;
+    color: #333;
+}

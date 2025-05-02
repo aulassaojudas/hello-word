@@ -1,26 +1,26 @@
+import { Link } from "react-router-dom";
+import { useUser } from "../../contexts/UserContext";
 import "./Nav.css";
 export const Nav = () => {
+    const { username } = useUser();
     return (
         <nav className="nav">
             <ul className="nav-list">
                 <li>
-                    <a className="nav-link" href="#home">
+                    <Link className="nav-link" to="/">
                         <span>Home</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a className="nav-link" href="#sobre">
+                    <Link className="nav-link" to="/sobre">
                         <span>Sobre</span>
-                    </a>
-                </li>
-                <li>
-                    <a className="nav-link" href="#login">
-                        <span>Login</span>
-                    </a>
+                    </Link>
                 </li>
             </ul>
+            {username &&
+                <div className="user-display">Bem-vindo, {username}!</div>
+            }
         </nav>
     );
 };
-
 

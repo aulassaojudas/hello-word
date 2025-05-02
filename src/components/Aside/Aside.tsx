@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { LoginLogoutLink } from "../LoginLogoutLink/LoginLogoutLink";
 import "./Aside.css";
 export const Aside = () => {
     return (
@@ -5,24 +7,27 @@ export const Aside = () => {
             <nav className="sidebar-nav">
                 <ul className="sidebar-list">
                     <li>
-                        <a className="sidebar-link" href="#dashboard">
+                        <LoginLogoutLink className="sidebar-link" />
+                    </li>
+                    <li>
+                        <Link className="sidebar-link" to="/indicador">
+                            <span>Indicador</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="sidebar-link" to="/dashboard">
                             <span>Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="sidebar-link" href="#perfil">
+                        <Link className="sidebar-link" to="/profile">
                             <span>Perfil</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="sidebar-link" href="#config">
+                        <Link className="sidebar-link" to="/settings">
                             <span>Configurações</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a className="sidebar-link" href="#sair">
-                            <span>Sair</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

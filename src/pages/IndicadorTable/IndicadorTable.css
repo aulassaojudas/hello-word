@@ -1,0 +1,109 @@
+.container-principal {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .filtro-container {
+    flex: 0 0 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: fit-content;
+  }
+  
+  .filtro-grupo {
+    margin-bottom: 20px;
+  }
+  
+  .filtro-grupo h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .checkbox-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .checkbox-label input {
+    margin-right: 6px;
+  }
+  
+  .tabela-container {
+    flex: 1;
+    overflow-x: auto;
+  }
+  
+  .tabela-indicadores {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .tabela-indicadores th,
+  .tabela-indicadores td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .tabela-indicadores th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .tabela-indicadores tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .tabela-indicadores a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .tabela-indicadores a:hover {
+    text-decoration: underline;
+  }
+  
+  .filtro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .botao-limpar {
+    margin-top: 10px;
+    background-color: #d9534f;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .botao-limpar:hover {
+    background-color: #c9302c;
+  }
+  
+  .contador {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .filtro-container.fechado {
+    width: 250px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .filtro-container.fechado .filtro-grupo,
+  .filtro-container.fechado .botao-limpar {
+    display: none;
+  }
+  
